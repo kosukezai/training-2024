@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習3</title>
+</head>
+<body>
+    <h1>JavaScript練習3</h1>
+    <h2>for文の作成</h2>
+    <div>
+        <p>1から10までの数字を順にブラウザ上で表示するfor文を作成しましょう</p>
+    </div>
+    <div>
+        <hr>
+        <h4>for文の構文</h4>
+        for (初期化式; 条件式; 増加または減少（更新式）) {<br>
+            繰り返し実行したい処理<br>
+            条件式がtrueになる間はずっと繰り返される<br>
+        } <br>
+        <h4>今回の場合は…</h4>
+        for (数字を入れる変数作成; 1~10まで繰り返す条件; 条件式終了後に行いたい更新) {<br>
+            ブラウザ上で変数を表示する処理<br>
+        } <br>
+        <p>ブラウザ上に何かを表示するときは「document.write();」を使います</p>
+        <p>brタグで改行すると見やすくなります〜</p>
+        <hr>
+        <p>この下に結果が表示されます！</p>
+    </div>
+    <script>
+        // for文の作成
+        for (let i = 1; i <= 10; i++) {
+            document.write(i + '<br>');
+        }
+    </script>
+</body>
+</html>

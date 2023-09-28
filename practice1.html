@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習1</title>
+</head>
+<body>
+    <h1>JavaScript練習1</h1>
+
+    <h2>変数の作成</h2>
+    <div>
+        <div style="padding: 20px;">
+            <p>🐶変数を作ってコンソール上と画面上で表示させてみましょう🐶</p>
+            <p>まずはletを使って変数numberに10を定義してください</p>
+        </div>
+        <div style="padding: 20px;">
+            <p>次にconsole.log();を使って変数numberの中身を表示させます</p>
+            <p style="color: gray;">ブラウザ上で右クリック→検証→コンソールでコンソールが開けます</p>
+        </div>
+        <div style="padding: 20px;">
+            <p>続いて画面上に変数numberの中身を表示させます</p>
+            <p>この下にdocument.write();の結果が表示されます</p>
+        </div>
+    </div>
+    <script>
+        // JavaScriptの処理は<script>タグ内に記述します！
+            let number = 10;
+            
+        // console.log(変数名)で変数の中身がコンソール上に表示されます
+            console.log('numberの中身', number);
+
+        // 画面上に文字を表示させるには、document.write("画面に表示したいテキスト");を使います
+            document.write('numberの中身 → ',  number);
+    </script>
+</body>
+</html>

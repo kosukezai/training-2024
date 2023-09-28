@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習2</title>
+</head>
+<body>
+    <h1>JavaScript練習2</h1>
+
+    <h2>if文の作成</h2>
+    <div>
+        <p>if文を使って年齢によって表示を変える処理を作りましょう</p>
+        <p>まず変数ageを使用して自分の年齢を代入してください</p>
+    </div>
+    <div>
+        <p>次に年齢が18歳以上の場合には「成人」、18歳未満の場合は「未成年」とコンソールに表示されるif文を作成しましょう</p>
+        <hr>
+        <h4>if文の構文</h4>
+        <p>if (条件式) {<br>
+        条件が真の場合の処理 <br>
+        } else { <br>
+        条件が偽の場合の処理 <br>
+        } <br>
+        <h4>今回の場合は…</h4>
+        <p>if (18歳以上であることを判定する条件式) {<br>
+        「成人」とコンソールに表示する処理 <br>
+        } else { <br>
+        「未成年」と表示する処理 <br>
+        } <br>
+        <hr>
+        </p>
+    </div>
+    <div>
+        <p>最後にコンソールを確認してみましょう！</p>
+        <p style="color: gray;">ブラウザ上で右クリック→検証→コンソールでコンソールが開けます</p>
+    </div>
+<script>
+        // まずは変数ageの定義
+        let age = 21;
+
+        // if文の作成
+        if (age >= 18) {
+            console.log("成人");
+        }else {
+        console.log("未成年");
+        }
+</script>
+</body>
+</html>

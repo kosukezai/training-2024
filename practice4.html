@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript練習4</title>
+</head>
+<body>
+    <h1>JavaScript演習4</h1>
+    <div>
+        <p>クリックすると計算を行ってくれるボタンを作成しましょう</p>
+        <!-- <button>はボタンを作ってくれるタグです！ -->
+        <!-- onclickで関数を呼び出しています -->
+        <button onclick="calculation()">計算する</button>
+        <!-- 計算結果を表示するための要素 -->
+        <p id="result"></p>
+        <p style="color: gray;">ボタン押した後はリロードすると元の画面に戻るよ〜</p>
+    </div>
+    <div>
+        <hr>
+        <h4>関数の構文</h4>
+        function 関数名() {<br>
+            関数内で行いたい操作や処理<br>
+            複数の処理を入れることができる<br>
+        }<br>
+        <h4>関数の呼び出し</h4>
+        関数名();
+        <h4>今回の場合は…</h4>
+        function calculation() {<br>
+            計算に使いたい定数を作成<br>
+            計算式を定数として記述<br>
+            計算式を画面上に表示するための記述<br>
+        }<br>
+
+        <hr>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        // ボタンをクリックすると実行される関数
+        function calculation() {
+            // 関数の中に計算のコードを書きます
+            // 定数num1と定数num2に好きな数字を作ってください
+            const num1 = 10;
+            const num2 = 2;
+
+            // 2つの定数を加算する定数を作ってください
+            const sum = num1 + num2;
+            
+            //resultとして表示したい定数を作成しましょう
+            const result = "計算結果：" + sum;
+            // 結果を表示する要素の中身を書きましょう
+            document.write(result);
+        }
+    </script>
+</body>
+</html>
